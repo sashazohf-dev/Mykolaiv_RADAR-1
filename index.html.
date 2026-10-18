@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>МИКО | РАДАР</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#07131b;color:#e7f7ff;font-family:Arial,sans-serif}
+header{padding:20px;background:#102630;border-bottom:1px solid #28505c}
+h1{margin:0;font-size:24px;color:#57e6a5}
+p{color:#9fbac5}
+main{padding:16px}
+.map{height:360px;border-radius:16px;position:relative;overflow:hidden;border:1px solid #23634d;background:radial-gradient(ellipse,#123c37 0%,#0b292b 50%,#081a24 100%)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(#3c927333 1px,transparent 1px),linear-gradient(90deg,#3c927333 1px,transparent 1px);background-size:35px 35px}
+.radar{position:absolute;width:240px;height:240px;border:1px solid #4ce6a466;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);box-shadow:0 0 35px #2ce5a322}
+.radar:before,.radar:after{content:"";position:absolute;border:1px solid #4ce6a444;border-radius:50%}
+.radar:before{inset:25%}.radar:after{inset:45%}
+.city{position:absolute;padding:7px 10px;border-radius:8px;background:#153b3c;border:1px solid #48bd8b;font-size:13px}
+.one{left:14%;top:32%}.two{right:12%;top:62%}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#61f3a5;margin-right:5px}
+.note{padding:14px;border:1px solid #24434e;border-radius:12px;margin-top:14px;background:#0c2029}
+small{color:#91aeb8}
+</style>
+</head>
+<body>
+<header>
+<h1>🟢 МИКО | РАДАР</h1>
+<p>Демонстраційна карта</p>
+</header>
+<main>
+<div class="map">
+<div class="grid"></div>
+<div class="radar"></div>
+<div class="city one">📍 Миколаїв</div>
+<div class="city two">📍 Одеса</div>
+</div>
+<div class="note"><span class="dot"></span><b>Система працює</b><p>Тестовий режим — без оперативних даних.</p></div>
+<small>Навчальний макет. Не використовувати для оцінки реальних загроз.</small>
+</main>
+</body>
+</html>
